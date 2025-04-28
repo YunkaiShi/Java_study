@@ -1,4 +1,6 @@
-package PACKAGE_NAME;
-
-public class Keyboard {
+public class Keyboard implements ComputerPart {
+    @Override
+    public void accept(ComputerPartVisitor computerPartVisitor) {
+        computerPartVisitor.visit(this);
+    }
 }
